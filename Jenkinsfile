@@ -10,7 +10,7 @@ pipeline{
        stage('build'){
             steps{
                 script{
-                  sh " ansible-playbook -vvvv /var/lib/jenkins/workspace/livraison/ansible/build.yml -i ansible/hosts.yml "
+                  sh " ansible-playbook ansible/build.yml -i ansible/hosts.yml "
              }
           }
         }
