@@ -13,8 +13,8 @@ pipeline
  stage('docker')
  {
  steps{
- script{
- sh " ansible-playbook  /var/lib/jenkins/workspace/cd/Ansible/docker.yml -i ansible/hosts.yml "
+ script{                
+ sh " ansible-playbook  /var/lib/jenkins/workspace/livraison/Ansible/docker.yml -i ansible/hosts.yml "
  }
  }
  }
@@ -27,8 +27,8 @@ pipeline
  stage('docker registry')
  {
  steps{
- script{
- sh " ansible-playbook  -vvvv /var/lib/jenkins/workspace/cd/Ansible/docker-registry.yml -i ansible/hosts.yml "
+ script{                      
+ sh " ansible-playbook  -vvvv /var/lib/jenkins/workspace/livraison/Ansible/docker-registry.yml -i ansible/hosts.yml "
  }
  }
  }
