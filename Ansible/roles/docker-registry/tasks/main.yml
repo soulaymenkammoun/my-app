@@ -1,0 +1,9 @@
+- name: Pushing
+  docker_image:
+   name: test
+   repository: soulaymendocker123/livraison
+   source: build
+   build:         
+     path: /var/lib/jenkins/workspace/cd
+   tag: latest
+   push: yes
