@@ -4,6 +4,6 @@
    repository: soulaymendocker123/livraison
    source: build
    build:         
-     path: /var/lib/jenkins/workspace/cd
+     path: /var/lib/jenkins/workspace/livraison
    tag: latest
    push: yes

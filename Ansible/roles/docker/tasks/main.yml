@@ -3,7 +3,7 @@
   docker_image:
     name: livraison
     build:
-     path: /var/lib/jenkins/workspace/cd
+     path: /var/lib/jenkins/workspace/livraison
      pull: no
     source: build
     state: present
