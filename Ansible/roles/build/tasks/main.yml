@@ -1,4 +1,4 @@
 ---
 #buid project
 - name: build app
-  shell: ng build --configuration production
+  shell: ng build --configuration production && chmod 777 -R /var/lib/jenkins/workspace/MyPipeline/dist/
