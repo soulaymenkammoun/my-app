@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
   gather_facts: true
-  remote_user: true 
+  remote_user: false
   roles:
     - { role: build }
