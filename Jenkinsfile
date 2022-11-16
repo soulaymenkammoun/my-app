@@ -14,7 +14,7 @@ pipeline
  {
  steps{
  script{                
- sh " ansible-playbook /var/lib/jenkins/workspace/MyPipeline/Ansible/docker.yml -i Ansible/inventory/hosts.yml "
+ sh " ansible-playbook Ansible/docker.yml -i Ansible/inventory/hosts.yml -e ansible_become_password=root"
  }
  }
  }

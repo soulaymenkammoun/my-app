@@ -1,7 +1,7 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: MyPipeline
+    name: devops
     build:
      path: /var/lib/jenkins/workspace/MyPipeline
      pull: no
@@ -11,7 +11,7 @@
 - name: run container docker
   docker_container:
     name: myapp_container
-    image: MyPipeline:latest
+    image: devops:latest
     state: started
     recreate: true
     ports:
