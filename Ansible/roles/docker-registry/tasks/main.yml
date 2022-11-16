@@ -1,9 +1,11 @@
 - name: Pushing
   docker_image:
    name: test
-   repository: soulaymendocker123/MyPipeline
+   repository: soulaymendocker123/devops
    source: build
    build:         
      path: /var/lib/jenkins/workspace/MyPipeline
    tag: latest
    push: yes
+   
+ 
